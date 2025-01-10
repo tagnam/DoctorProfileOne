@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';

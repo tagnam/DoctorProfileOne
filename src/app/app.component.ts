@@ -6,11 +6,13 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { DoctorComponent } from './doctor/doctor.component';
 import { ServicesComponent } from './services/services.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
+    RouterLink,
     RouterOutlet,
     CommonModule,
     HomeComponent,
