@@ -1,14 +1,20 @@
-<header class="landing-header" style="position: relative; background-image: url(image/team-of-multiracial-doctors-at-hospital-e1598498378805.jpg); background-position: top; background-repeat: no-repeat; background-size: cover; height: 55vh;">
-       
-   
+<header
+    class="landing-header"
+    [style]="{
+    'position': 'relative', 
+    'background-image': 'url(assets/images/bannerImage_1.jpg)', 
+    'background-position': 'top', 
+    'background-repeat': 'no-repeat', 
+    'background-size': 'cover', 
+    'height': '55vh'
+  }"
+>
     <div class="header-overlay">
         <div class="container">
-                    <h1 class="header-heading" style="font-size: 60px; text-align: center;">Our Doctor</h1>
-            </div>
+            <h1 class="header-heading" style="font-size: 60px; text-align: center;">Our Doctor</h1>
         </div>
-      
+    </div>
 </header>
-
 
 <section style="margin-bottom: 200px;">
     <div class="container">
@@ -42,7 +48,6 @@
                     </div>
                 </div>
             </div>
-          
         </div>
     </div>
 </section>
@@ -110,14 +115,12 @@
     <div class="container">
         <div class="row">
             <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col"  *ngFor="let clientlogo of client">
-                  <div class="card" style="border: unset;">
-                    <img [src]="clientlogo.image" class="card-img-top w-75 client-logo" alt="...">
-                    
-                  </div>
+                <div class="col" *ngFor="let clientlogo of client">
+                    <div class="card" style="border: unset;">
+                        <img [src]="clientlogo.image" class="card-img-top w-75 client-logo" alt="..." />
+                    </div>
                 </div>
-               
-              </div>
+            </div>
         </div>
     </div>
-    </section>
+</section>

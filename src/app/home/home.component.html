@@ -1,313 +1,298 @@
-<section style="position: relative; margin-top: unset;"> 
-    <div class="container-fluid" style="padding: unset; position: relative;">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
+<section style="position: relative; margin-top: unset;">
+  <div class="container-fluid" style="padding: unset; position: relative;">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
               <div class="carousel-item active">
-                <img [src]="bannerImg01" class="d-block w-100" alt="...">
+                  <img [src]="bannerImg01" class="d-block w-100" alt="..." />
               </div>
               <div class="carousel-item">
-                <img [src]="bannerImg02"  class="d-block w-100" alt="...">
+                  <img [src]="bannerImg02" class="d-block w-100" alt="..." />
               </div>
-              
-            </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button> -->
-            <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
           </div>
-         
-    </div>
-    <div class="header-overlay">
-        <div class="container">
-            <div class="overlay-container">
-                <div class="col-lg-10 header-content-container">
-                    <h1 class="header-heading">{{bannerHeading}}</h1>
-                    <p class="header-text">{{bannerText}}</p>
-                    <div class="row">
-                        <button type="button" class="btn custom-btn">Primary</button>
-                        <button type="button" class="btn custom-btn">Primary</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button> -->
+          <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
       </div>
-
-    
+  </div>
+  <div class="header-overlay">
+      <div class="container">
+          <div class="overlay-container">
+              <div class="col-lg-10 header-content-container">
+                  <h1 class="header-heading">{{bannerHeading}}</h1>
+                  <p class="header-text">{{bannerText}}</p>
+                  <div class="row">
+                      <button type="button" class="btn custom-btn">Primary</button>
+                      <button type="button" class="btn custom-btn">Primary</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 <section>
   <div class="container">
-    <div class="col-md-12">
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col service-card-container" *ngFor="let Service of ServiceData  ">
-          <div class="card h-100 header-service-card" >
-            <img src="{{Service.ServiceImg}}" class="card-img-top" alt="...">
-            <div class="card-body header-service-card-body">
-              <h5 class="card-title">{{Service.ServiceHeading}}</h5>
-              <p class="card-text">{{Service.ServiceText}}</p>
-              <button class="btn btn-primary" type="submit">Button</button>
-            </div>
+      <div class="col-md-12">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col service-card-container" *ngFor="let Service of ServiceData  ">
+                  <div class="card h-100 header-service-card">
+                      <img src="{{Service.ServiceImg}}" class="card-img-top" alt="..." />
+                      <div class="card-body header-service-card-body">
+                          <h5 class="card-title">{{Service.ServiceHeading}}</h5>
+                          <p class="card-text">{{Service.ServiceText}}</p>
+                          <button class="btn btn-primary" type="submit">Button</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
 </section>
 
-
 <section>
-    <div class="container">
-        <div class="row trust-row">
-            <div class="col-lg-6">
-                <div class="left-cantaint">
-                    <div class="left-text-container">
-                        <h2>{{TrustHeading}}</h2>
-                        <p>{{TrustText}}</p>
-                    </div>
-                    <div class="card clinic-card mb-3" style="border: unset;" *ngFor="let Trust of  TrustList">
-                        <div class="row g-0">
+  <div class="container">
+      <div class="row trust-row">
+          <div class="col-lg-6">
+              <div class="left-cantaint">
+                  <div class="left-text-container">
+                      <h2>{{TrustHeading}}</h2>
+                      <p>{{TrustText}}</p>
+                  </div>
+                  <div class="card clinic-card mb-3" style="border: unset;" *ngFor="let Trust of  TrustList">
+                      <div class="row g-0">
                           <div class="col-md-3">
-                            <div class="left-icon ">
-                                <i class="bi bi-hospital"></i>
-                            </div>
+                              <div class="left-icon">
+                                  <i class="bi bi-hospital"></i>
+                              </div>
                           </div>
                           <div class="col-md-9">
-                            <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">{{Trust.TrustHeading}}</h5>
-                              <p class="card-text clinic-text">{{Trust.TrustText}}</p>
-                            </div>
+                              <div class="card-body clinic-body">
+                                  <h5 class="card-title clinic-titel">{{Trust.TrustHeading}}</h5>
+                                  <p class="card-text clinic-text">{{Trust.TrustText}}</p>
+                              </div>
                           </div>
-                        </div>
                       </div>
-                     
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="right-img">
-                    <figure style="padding: 30px;">
-                        <img [src]="TrustRightImg" class="w-100" alt="">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section style="background-color: #EFF6FE; padding: 50px 0px;">
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col" *ngFor="let Counter of  CounterContent">
-              <div class="card h-100 countor-card" style="border: unset; text-align: center;background-color: unset; ">
-                      <!-- {{Counter.CounterIcon}}  -->
-                      <i class="bi bi-1-circle"></i>
-                <div class="card-body">
-                  <h5 class="card-title countor-card-title">{{Counter.CounterNum}}</h5>
-                  <p class="card-text countor-card-text">{{Counter.CounterText}}</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-    </div>
-</section>
-
-<section>
-<div class="container">
-    <div class="row">
-            <div class="main-heading-content">
-                <h2>{{ServiceMainHeading}}</h2>
-                <p>{{ServiceMainText}}</p>
-            </div>
-        <div class="col-lg-9">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col" *ngFor="let ServiceS of ServiceSection">
-                    <div class="card clinic-card mb-3" style="border: unset;">
-                        <div class="row g-0">
-                          <div class="col-md-3">
-                            <div class="left-icon ">
-                                <i class="bi bi-hospital"></i>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">{{ServiceS.ServiceTitel}}</h5>
-                              <p class="card-text clinic-text">{{ServiceS.ServiceText}}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                
-              </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="row row-cols-1 row-cols-md-12 g-4">
-                <div class="col">
-                  <div class="card h-100" style="background-image: linear-gradient(0deg, #38C7F6 0%, #2A73ED 100%);">
-                    
-                    <div class="card-body">
-                      <h5 class="card-title" style="color: #fff;" >Opening Hours</h5>
-                      <p class="card-text" style="color: #fff;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="col day-time">
-                            <div class="row " style="justify-content:space-between;">
-                                <div class="day">Mon-Fri</div>
-                                <div class="time">6am - 10pm</div>
-                            </div>
-                        </div>
-                        <div class="col day-time">
-                            <div class="row"style="justify-content:space-between;">
-                                <div class="day">Mon-Fri</div>
-                                <div class="time">6am - 10pm</div>
-                            </div>
-                        </div>
-                    </div>
                   </div>
-                </div>
-               
-                
               </div>
-        </div>
-    </div>
-</div>
-</section>
-<section>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="right-img" style="height: 500px;">
-                <figure style="padding: 30px;">
-                    <img [src]="TrustLeftImg" class="w-100" alt="">
-                </figure>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="left-cantaint">
-                <div class="left-text-container">
-                    <h2>{{AccordionMainHeading}}</h2>
-                    <p>{{AccordionText}}</p>
-                </div>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            We Have The Medical Specialists
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Quality and Safety at Medkit Clinic
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. <br> It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Diseases and Conditions
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-       
-    </div>
-</div>
-</section>
-
-<section style="background-image: linear-gradient(180deg, #E3F8FF 0%, #FFFFFF 100%);">
-<div class="container" style="padding-top: 50px;">
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="left-text-container">
-                <h2>{{ApointMainHeading}}</h2>
-                <p>{{ApointText}}</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4 style="color: #10295D;font-size: 20px;font-weight: 600;">Denpasar, Bali</h4>
-                    <p style="font-size: 14px;"><i class="bi bi-geo-alt-fill" style="color: #2A73ED;"></i> Jl. Niti Mandala, Renon, Bali, Indonesia – 80225</p>
-                    <p style="font-size: 14px;">
-                        <i class="bi bi-telephone-fill" style="color: #2A73ED;"></i> +62 361 234 4567</p>
-                        <p style="font-size: 14px;">
-                            <i class="bi bi-envelope-fill" style="color: #2A73ED;"></i> contactdomain.com</p>
-                </div>
-                <div class="col-lg-6">
-                    <h4 style="color: #10295D;font-size: 20px;font-weight: 600;">Denpasar, Bali</h4>
-                    <p style="font-size: 14px;"><i class="bi bi-geo-alt-fill" style="color: #2A73ED;"></i> Jl. Niti Mandala, Renon, Bali, Indonesia – 80225</p>
-                    <p style="font-size: 14px;">
-                        <i class="bi bi-telephone-fill" style="color: #2A73ED;"></i> +62 361 234 4567</p>
-                        <p style="font-size: 14px;">
-                            <i class="bi bi-envelope-fill" style="color: #2A73ED;"></i> contactdomain.com</p>
-                </div>
-            </div>
-            
-        </div>
-        <div class="col-lg-6">
-                <div class="apointment-form">
-                    <form action="">
-                        <div class="input-form">
-                            <input type="text" name=" name" class="input-section" placeholder="Your name" id="">
-                        </div>
-                        
-                        <div class="input-form">
-                            <input type="email" name="Email" class="input-section" placeholder="Your Email" id="">
-                        </div>
-                       
-                        <div class="input-form">
-                            <input type="datetime-local" name="datetime" id="" class="input-section">
-                        </div>
-                       
-                        <div class="input-form" >
-                            <select name="service-option" id="" class="input-section">
-                                <option value="">Select Option</option>
-                                <option value="">option-01</option>
-                                <option value="">option-02</option>
-                                <option value="">option-03</option>
-                                <option value="">option-04</option>
-                            </select>
-                        </div>
-                       
-                        <div class="input-form">
-                            <textarea name="message" id="" rows="4" cols="50" class="input-section" placeholder="Your Message" ></textarea>
-                        </div>
-                        <div class="input-form">
-                            <input class="btn btn-primary w-25" type="submit" value="Submit">
-                        </div>
-
-                       
-                    </form>
-                </div>
-        </div>
-    </div>
-</div>
-</section>
-
-<section>
-<div class="container">
-    <div class="row">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col"  *ngFor="let clientlogo of client">
-              <div class="card" style="border: unset;">
-                <img [src]="clientlogo.image" class="card-img-top w-75 client-logo" alt="...">
-                
-              </div>
-            </div>
-           
           </div>
-    </div>
-</div>
+          <div class="col-lg-6">
+              <div class="right-img">
+                  <figure style="padding: 30px;">
+                      <img [src]="TrustRightImg" class="w-100" alt="" />
+                  </figure>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section style="background-color: #eff6fe; padding: 50px 0px;">
+  <div class="container">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col" *ngFor="let Counter of  CounterContent">
+              <div class="card h-100 countor-card" style="border: unset; text-align: center; background-color: unset;">
+                  <!-- {{Counter.CounterIcon}}  -->
+                  <i class="bi bi-1-circle"></i>
+                  <div class="card-body">
+                      <h5 class="card-title countor-card-title">{{Counter.CounterNum}}</h5>
+                      <p class="card-text countor-card-text">{{Counter.CounterText}}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="main-heading-content">
+              <h2>{{ServiceMainHeading}}</h2>
+              <p>{{ServiceMainText}}</p>
+          </div>
+          <div class="col-lg-9">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col" *ngFor="let ServiceS of ServiceSection">
+                      <div class="card clinic-card mb-3" style="border: unset;">
+                          <div class="row g-0">
+                              <div class="col-md-3">
+                                  <div class="left-icon">
+                                      <i class="bi bi-hospital"></i>
+                                  </div>
+                              </div>
+                              <div class="col-md-9">
+                                  <div class="card-body clinic-body">
+                                      <h5 class="card-title clinic-titel">{{ServiceS.ServiceTitel}}</h5>
+                                      <p class="card-text clinic-text">{{ServiceS.ServiceText}}</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3">
+              <div class="row row-cols-1 row-cols-md-12 g-4">
+                  <div class="col">
+                      <div class="card h-100" style="background-image: linear-gradient(0deg, #38c7f6 0%, #2a73ed 100%);">
+                          <div class="card-body">
+                              <h5 class="card-title" style="color: #fff;">Opening Hours</h5>
+                              <p class="card-text" style="color: #fff;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                              <div class="col day-time">
+                                  <div class="row" style="justify-content: space-between;">
+                                      <div class="day">Mon-Fri</div>
+                                      <div class="time">6am - 10pm</div>
+                                  </div>
+                              </div>
+                              <div class="col day-time">
+                                  <div class="row" style="justify-content: space-between;">
+                                      <div class="day">Mon-Fri</div>
+                                      <div class="time">6am - 10pm</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="right-img" style="height: 500px;">
+                  <figure style="padding: 30px;">
+                      <img [src]="TrustLeftImg" class="w-100" alt="" />
+                  </figure>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="left-cantaint">
+                  <div class="left-text-container">
+                      <h2>{{AccordionMainHeading}}</h2>
+                      <p>{{AccordionText}}</p>
+                  </div>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  We Have The Medical Specialists
+                              </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Quality and Safety at Medkit Clinic
+                              </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. <br />
+                                  It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Diseases and Conditions
+                              </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far
+                                  World of Grammar.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section style="background-image: linear-gradient(180deg, #e3f8ff 0%, #ffffff 100%);">
+  <div class="container" style="padding-top: 50px;">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="left-text-container">
+                  <h2>{{ApointMainHeading}}</h2>
+                  <p>{{ApointText}}</p>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6">
+                      <h4 style="color: #10295d; font-size: 20px; font-weight: 600;">Denpasar, Bali</h4>
+                      <p style="font-size: 14px;"><i class="bi bi-geo-alt-fill" style="color: #2a73ed;"></i> Jl. Niti Mandala, Renon, Bali, Indonesia – 80225</p>
+                      <p style="font-size: 14px;"><i class="bi bi-telephone-fill" style="color: #2a73ed;"></i> +62 361 234 4567</p>
+                      <p style="font-size: 14px;"><i class="bi bi-envelope-fill" style="color: #2a73ed;"></i> contactdomain.com</p>
+                  </div>
+                  <div class="col-lg-6">
+                      <h4 style="color: #10295d; font-size: 20px; font-weight: 600;">Denpasar, Bali</h4>
+                      <p style="font-size: 14px;"><i class="bi bi-geo-alt-fill" style="color: #2a73ed;"></i> Jl. Niti Mandala, Renon, Bali, Indonesia – 80225</p>
+                      <p style="font-size: 14px;"><i class="bi bi-telephone-fill" style="color: #2a73ed;"></i> +62 361 234 4567</p>
+                      <p style="font-size: 14px;"><i class="bi bi-envelope-fill" style="color: #2a73ed;"></i> contactdomain.com</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="apointment-form">
+                  <form action="">
+                      <div class="input-form">
+                          <input type="text" name=" name" class="input-section" placeholder="Your name" id="" />
+                      </div>
+
+                      <div class="input-form">
+                          <input type="email" name="Email" class="input-section" placeholder="Your Email" id="" />
+                      </div>
+
+                      <div class="input-form">
+                          <input type="datetime-local" name="datetime" id="" class="input-section" />
+                      </div>
+
+                      <div class="input-form">
+                          <select name="service-option" id="" class="input-section">
+                              <option value="">Select Option</option>
+                              <option value="">option-01</option>
+                              <option value="">option-02</option>
+                              <option value="">option-03</option>
+                              <option value="">option-04</option>
+                          </select>
+                      </div>
+
+                      <div class="input-form">
+                          <textarea name="message" id="" rows="4" cols="50" class="input-section" placeholder="Your Message"></textarea>
+                      </div>
+                      <div class="input-form">
+                          <input class="btn btn-primary w-25" type="submit" value="Submit" />
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col" *ngFor="let clientlogo of client">
+                  <div class="card" style="border: unset;">
+                      <img [src]="clientlogo.image" class="card-img-top w-75 client-logo" alt="..." />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
