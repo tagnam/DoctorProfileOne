@@ -118,12 +118,12 @@
 <div class="container">
     <div class="row">
             <div class="main-heading-content">
-                <h2>We Provide Best Healthcare Services</h2>
-                <p>Getting an accurate diagnosis can be one of the most impactful experiences that you can have.</p>
+                <h2>{{ServiceMainHeading}}</h2>
+                <p>{{ServiceMainText}}</p>
             </div>
         <div class="col-lg-9">
             <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
+                <div class="col" *ngFor="let ServiceS of ServiceSection">
                     <div class="card clinic-card mb-3" style="border: unset;">
                         <div class="row g-0">
                           <div class="col-md-3">
@@ -133,64 +133,14 @@
                           </div>
                           <div class="col-md-9">
                             <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">24 Hour Healthcare Services</h5>
-                              <p class="card-text clinic-text">We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care.</p>
+                              <h5 class="card-title clinic-titel">{{ServiceS.ServiceTitel}}</h5>
+                              <p class="card-text clinic-text">{{ServiceS.ServiceText}}</p>
                             </div>
                           </div>
                         </div>
                       </div>
                 </div>
-                <div class="col">
-                    <div class="card clinic-card mb-3" style="border: unset;">
-                        <div class="row g-0">
-                          <div class="col-md-3">
-                            <div class="left-icon ">
-                                <i class="bi bi-hospital"></i>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">24 Hour Healthcare Services</h5>
-                              <p class="card-text clinic-text">We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card clinic-card mb-3" style="border: unset;">
-                        <div class="row g-0">
-                          <div class="col-md-3">
-                            <div class="left-icon ">
-                                <i class="bi bi-hospital"></i>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">24 Hour Healthcare Services</h5>
-                              <p class="card-text clinic-text">We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                    <div class="card clinic-card mb-3" style="border: unset;">
-                        <div class="row g-0">
-                          <div class="col-md-3">
-                            <div class="left-icon ">
-                                <i class="bi bi-hospital"></i>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">24 Hour Healthcare Services</h5>
-                              <p class="card-text clinic-text">We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+                
               </div>
         </div>
         <div class="col-lg-3">
@@ -227,7 +177,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-6">
-            <div class="right-img">
+            <div class="right-img" style="height: 500px;">
                 <figure style="padding: 30px;">
                     <img src="image/illustration-3HT8LSZ@2x.png" class="w-100" alt="">
                 </figure>
@@ -236,8 +186,8 @@
         <div class="col-lg-6">
             <div class="left-cantaint">
                 <div class="left-text-container">
-                    <h2>Find the right<br> Medication for you</h2>
-                    <p>Getting an accurate diagnosis can be one of the most impactful experiences that you can have. We can help you get there.</p>
+                    <h2>{{AccordionMainHeading}}</h2>
+                    <p>{{AccordionText}}</p>
                 </div>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
@@ -283,8 +233,8 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="left-text-container">
-                <h2>Make Appointment</h2>
-                <p>Getting an accurate diagnosis can be one of the most impactful experiences that you can have — especially if you’ve been in search of that answer for a while. We can help you get there.</p>
+                <h2>{{ApointMainHeading}}</h2>
+                <p>{{ApointText}}</p>
             </div>
             <div class="row">
                 <div class="col-lg-6">
@@ -356,24 +306,7 @@
                 
               </div>
             </div>
-            <div class="col">
-              <div class="card" style="border: unset;">
-                <img src="image/logo-2@2x.png" class="card-img-top w-75 client-logo" alt="...">
-                
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" style="border: unset;">
-                <img src="image/logo-3.png" class="card-img-top w-75 client-logo" alt="...">
-                
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" style="border: unset;">
-                <img src="image/logo-4@2x.png" class="card-img-top w-75 client-logo" alt="...">
-                
-              </div>
-            </div>
+           
           </div>
     </div>
 </div>

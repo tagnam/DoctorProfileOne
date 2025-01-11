@@ -46,4 +46,40 @@ CounterContent:any[]=[
 { CounterIcon:"bi bi-hand-thumbs-up", CounterNum:"425 +", CounterText:"Hospital Rooms"}
 ]
 
+
+
+ServiceMainHeading="We Provide Best Healthcare Services "
+ServiceMainText="Getting an accurate diagnosis can be one of the most impactful experiences that you can have."
+
+ServiceSection:any[]=[
+      {ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
+      {ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
+      {ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
+      {ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"}
+]
+
+
+AccordionMainHeading="Find the right Medication for you"
+AccordionText="Getting an accurate diagnosis can be one of the most impactful experiences that you can have. We can help you get there."
+
+
+// AccordionData:any[]=[
+//     {accordionTitel:"We Have The Medical Specialists", accordionText:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."},
+//     {accordionTitel:"We Have The Medical Specialists", accordionText:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."},
+//     {accordionTitel:"We Have The Medical Specialists", accordionText:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."},
+
+// ]
+
+
+
+ApointMainHeading="Make Appointment"
+ApointText="Getting an accurate diagnosis can be one of the most impactful experiences that you can have — especially if you’ve been in search of that answer for a while. We can help you get there"
+
+// client:any[]=[
+//   {image:"assets/images/logo-1@2x.png"},
+//   {image:"assets/images/logo-2@2x.png"},
+//   {image:"assets/images/logo-3.png"},
+//   {image:"assets/images/logo-4@2x.png"},
+// ]
+
 }
