@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+// import { NgModule } from '@angular/core';
+// import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [
+    // NgModule,
+    // BrowserModule,
+    CommonModule
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -14,8 +21,7 @@ export class HomeComponent {
   bannerHeading='Healthcare for Your Family’s Health';
   bannerText='Emergency service with international standard'
 
-
-ServiceData:any =[
+ServiceData: any[] =[
   
   { ServiceImg:"assets/images/service_1.jpg", ServiceHeading:"Dental Service", ServiceText:"Get quality medicines that are officially certified for you."},
   { ServiceImg:"assets/images/service_2.jpg", ServiceHeading:"Primary Care", ServiceText:"Get quality medicines that are officially certified for you."},
@@ -24,10 +30,20 @@ ServiceData:any =[
 
 ]
 
+TrustHeading="Medical Clinic that you can trust"
+TrustText="Getting an accurate diagnosis can be one of the most impactful experiences that you can have — especially if you’ve been in search of that answer for a while. We can help you get there."
 
+TrustList:any[]=[
+  {TrustHeading:"24 Hour Healthcare Services",TrustText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care."},
+  {TrustHeading:"International Standards",TrustText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care."},
+  {TrustHeading:"Center of Excellence",TrustText:"Center of Excellence We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care."}
+]
 
-
-
-
+CounterContent:any[]=[
+{ CounterIcon:"bi bi-hand-thumbs-up", CounterNum:"20+", CounterText:"Years Of Experience"},
+{ CounterIcon:"bi bi-hand-thumbs-up", CounterNum:"8,450 +", CounterText:"Happy Patients"},
+{ CounterIcon:"bi bi-hand-thumbs-up", CounterNum:" 1,250 +", CounterText:"Doctors and Staff"},
+{ CounterIcon:"bi bi-hand-thumbs-up", CounterNum:"425 +", CounterText:"Hospital Rooms"}
+]
 
 }

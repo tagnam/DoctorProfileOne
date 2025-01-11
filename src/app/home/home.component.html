@@ -34,30 +34,29 @@
                 </div>
             </div>
         </div>
-        
       </div>
 
     
 </section>
 <section>
-    <div class="container ">
-        <div class="col-md-12">
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col service-card-container" **ngForOf="let Service of ServiceData">
-                  <div class="card  h-100 header-service-card">
-                    <img src="{{Service.ServiceImg}}" class="card-img-top" alt="...">
-                    <div class="card-body header-service-card-body">
-                      <h5 class="card-title">{{Service.ServiceHeading}}</h5>
-                      <p class="card-text">{{Service.ServiceText}}</p>
-                      <button class="btn btn-primary" type="submit">Button</button>
-                    </div>
-                  </div>
-                </div>
-     
-              </div>
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col service-card-container" *ngFor="let Service of ServiceData  ">
+          <div class="card h-100 header-service-card" >
+            <img src="{{Service.ServiceImg}}" class="card-img-top" alt="...">
+            <div class="card-body header-service-card-body">
+              <h5 class="card-title">{{Service.ServiceHeading}}</h5>
+              <p class="card-text">{{Service.ServiceText}}</p>
+              <button class="btn btn-primary" type="submit">Button</button>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
 </section>
+
 
 <section>
     <div class="container">
@@ -65,10 +64,10 @@
             <div class="col-lg-6">
                 <div class="left-cantaint">
                     <div class="left-text-container">
-                        <h2>Medical Clinic that <br> you can trust</h2>
-                        <p>Getting an accurate diagnosis can be one of the most impactful experiences that you can have — especially if you’ve been in search of that answer for a while. We can help you get there.</p>
+                        <h2>{{TrustHeading}}</h2>
+                        <p>{{TrustText}}</p>
                     </div>
-                    <div class="card clinic-card mb-3" style="border: unset;">
+                    <div class="card clinic-card mb-3" style="border: unset;" *ngFor="let Trust of  TrustList">
                         <div class="row g-0">
                           <div class="col-md-3">
                             <div class="left-icon ">
@@ -77,45 +76,13 @@
                           </div>
                           <div class="col-md-9">
                             <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">24 Hour Healthcare Services</h5>
-                              <p class="card-text clinic-text">We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care.</p>
+                              <h5 class="card-title clinic-titel">{{Trust.TrustHeading}}</h5>
+                              <p class="card-text clinic-text">{{Trust.TrustText}}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="card clinic-card mb-3" style="border: unset;">
-                        <div class="row g-0">
-                          <div class="col-md-3">
-                            <div class="left-icon ">
-                                <i class="bi bi-hospital"></i>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">
-                                International Standards</h5>
-                              <p class="card-text clinic-text">We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card clinic-card mb-3" style="border: unset;">
-                        <div class="row g-0">
-                          <div class="col-md-3">
-                            <div class="left-icon ">
-                                <i class="bi bi-hospital"></i>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <div class="card-body clinic-body">
-                              <h5 class="card-title clinic-titel">Center of Excellence</h5>
-                              <p class="card-text clinic-text">
-                                Center of Excellence
-                                We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                     
                 </div>
             </div>
             <div class="col-lg-6">
@@ -132,47 +99,17 @@
 <section style="background-color: #EFF6FE; padding: 50px 0px;">
     <div class="container">
         <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
+            <div class="col" *ngFor="let Counter of  CounterContent">
               <div class="card h-100 countor-card" style="border: unset; text-align: center;background-color: unset; ">
-                <i class="bi bi-hand-thumbs-up"></i>
-               
+                      <!-- {{Counter.CounterIcon}}  -->
+                      <i class="bi bi-1-circle"></i>
                 <div class="card-body">
-                  <h5 class="card-title countor-card-title">20 +</h5>
-                  <p class="card-text countor-card-text">Years Of Experience</p>
+                  <h5 class="card-title countor-card-title">{{Counter.CounterNum}}</h5>
+                  <p class="card-text countor-card-text">{{Counter.CounterText}}</p>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card h-100 countor-card" style="border: unset; text-align: center;background-color: unset; ">
-                <i class="bi bi-people"></i>
-               
-                <div class="card-body">
-                  <h5 class="card-title countor-card-title">8,450 +</h5>
-                  <p class="card-text countor-card-text">Happy Patients</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 countor-card" style="border: unset; text-align: center;background-color: unset; ">
-                <i class="bi bi-heart-pulse"></i>
-              
-                <div class="card-body">
-                  <h5 class="card-title countor-card-title">
-                    1,250 +</h5>
-                  <p class="card-text countor-card-text">Doctors and Staff</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 countor-card" style="border: unset; text-align: center;background-color: unset; ">
-                <i class="bi bi-hospital"></i>
-               
-                <div class="card-body">
-                  <h5 class="card-title countor-card-title">425 +</h5>
-                  <p class="card-text countor-card-text">Hospital Rooms</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
     </div>
 </section>
