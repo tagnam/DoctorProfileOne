@@ -75,11 +75,15 @@ AccordionText="Getting an accurate diagnosis can be one of the most impactful ex
 ApointMainHeading="Make Appointment"
 ApointText="Getting an accurate diagnosis can be one of the most impactful experiences that you can have — especially if you’ve been in search of that answer for a while. We can help you get there"
 
-// client:any[]=[
-//   {image:"assets/images/logo-1@2x.png"},
-//   {image:"assets/images/logo-2@2x.png"},
-//   {image:"assets/images/logo-3.png"},
-//   {image:"assets/images/logo-4@2x.png"},
-// ]
+client:any[]=[
+  {image:"assets/images/logo1.png"},
+  {image:"assets/images/logo2.png"},
+  {image:"assets/images/logo3.png"},
+  {image:"assets/images/logo4.png"},
+]
+
+
+
+
 
 }

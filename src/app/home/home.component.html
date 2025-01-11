@@ -300,9 +300,9 @@
 <div class="container">
     <div class="row">
         <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
+            <div class="col"  *ngFor="let clientlogo of client">
               <div class="card" style="border: unset;">
-                <img src="image/logo-1@2x.png" class="card-img-top w-75 client-logo" alt="...">
+                <img [src]="clientlogo.image" class="card-img-top w-75 client-logo" alt="...">
                 
               </div>
             </div>
