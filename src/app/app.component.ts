@@ -26,4 +26,7 @@ import { RouterLink } from '@angular/router';
 })
 export class AppComponent {
   title = 'Doctor';
+
+
+  logo="assets/images/logo1.png"
 }
