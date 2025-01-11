@@ -40,10 +40,10 @@ TrustList:any[]=[
 ]
 
 CounterContent:any[]=[
-{ CounterIcon:"bi bi-hand-thumbs-up", CounterNum:"20+", CounterText:"Years Of Experience"},
-{ CounterIcon:"bi bi-hand-thumbs-up", CounterNum:"8,450 +", CounterText:"Happy Patients"},
-{ CounterIcon:"bi bi-hand-thumbs-up", CounterNum:" 1,250 +", CounterText:"Doctors and Staff"},
-{ CounterIcon:"bi bi-hand-thumbs-up", CounterNum:"425 +", CounterText:"Hospital Rooms"}
+{ CounterIcon:"bi bi-1-circle", CounterNum:"20+", CounterText:"Years Of Experience"},
+{ CounterIcon:"bi bi-2-circle", CounterNum:"8,450 +", CounterText:"Happy Patients"},
+{ CounterIcon:"bi bi-3-circle", CounterNum:" 1,250 +", CounterText:"Doctors and Staff"},
+{ CounterIcon:"bi bi-4-circle", CounterNum:"425 +", CounterText:"Hospital Rooms"}
 ]
 
 
@@ -52,10 +52,10 @@ ServiceMainHeading="We Provide Best Healthcare Services "
 ServiceMainText="Getting an accurate diagnosis can be one of the most impactful experiences that you can have."
 
 ServiceSection:any[]=[
-      {ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
-      {ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
-      {ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
-      {ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"}
+      {icon:"bi bi-1-circle", ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
+      { icon:"bi bi-2-circle",ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
+      {icon:"bi bi-3-circle", ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"},
+      {icon:"bi bi-4-circle",ServiceTitel:"24 Hour Healthcare Services", ServiceText:"We are committed to your health and well-being, offering the very latest in comprehensive evidence-based care"}
 ]
 
 

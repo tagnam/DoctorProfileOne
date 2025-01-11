@@ -95,8 +95,8 @@
       <div class="row row-cols-1 row-cols-md-4 g-4">
           <div class="col" *ngFor="let Counter of  CounterContent">
               <div class="card h-100 countor-card" style="border: unset; text-align: center; background-color: unset;">
-                  <!-- {{Counter.CounterIcon}}  -->
-                  <i class="bi bi-1-circle"></i>
+  
+                  <i [class]="Counter.CounterIcon"></i>
                   <div class="card-body">
                       <h5 class="card-title countor-card-title">{{Counter.CounterNum}}</h5>
                       <p class="card-text countor-card-text">{{Counter.CounterText}}</p>
@@ -121,7 +121,7 @@
                           <div class="row g-0">
                               <div class="col-md-3">
                                   <div class="left-icon">
-                                      <i class="bi bi-hospital"></i>
+                                      <i [class]="ServiceS.icon"></i>
                                   </div>
                               </div>
                               <div class="col-md-9">
