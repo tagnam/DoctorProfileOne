@@ -81,6 +81,8 @@ client:any[]=[
   {image:"assets/images/logo3.png"},
   {image:"assets/images/logo4.png"},
 ]
+TrustLeftImg="assets/images/femail01.png"
+TrustRightImg="assets/images/femail02.png"
 
 
 
